@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CST8285_level2_Lab2 order_form</title>
+    <meta name="Author" content="Chunxia Pang">
+    <meta charset="UTF-8" />
+
+    <style>
+        .product, .product td, .product th {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+
+<body>
+    <form>
+        <fieldset>
+            <h1 style="color: rgb(218, 21, 21);">Order Form</h1>
+            <!--<div id="basic_information">-->
+            <fieldset>
+                <legend>Basic Information</legend>
+                <table>
+                    <tr>
+                        <td>Name:</td>
+                        <td><input type="text" name="name" id="name" disabled value="Chunxia Pang"></td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td><input type="email" name="email" id="email" value="pang0064@algonquinlive.com"></td>
+                    </tr>
+                    <tr>
+                        <td>Address:</td>
+                        <td><textarea rows="5" cols="25" name="address" id="address"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>Postcode:</td>
+                        <td><input type="text" name="postcode" id="postcode"></td>
+                    </tr>
+                </table>
+            </fieldset><br>
+
+
+            <fieldset>
+                <legend>Product Information</legend>
+                <table class="product">
+                    <tr >
+                        <th> Product</th>
+                        <th> Part Number</th>
+                        <th> Quantity</th>
+                        <th> Unit Price</th>
+                        <th> Subtotal</th>
+                    </tr>
+                    <tr>
+                        <td>Box</td>
+                        <td>AC100</td>
+                        <td>&nbsp;</td>
+                        <td>$5</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>Coffee Table</td>
+                        <td>AC200</td>
+                        <td>&nbsp;</td>
+                        <td>$100</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>Chair</td>
+                        <td>AC300</td>
+                        <td>&nbsp;</td>
+                        <td>$150</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>Desk</td>
+                        <td>AC400</td>
+                        <td>&nbsp;</td>
+                        <td>$120</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>Computer Table</td>
+                        <td>AC500</td>
+                        <td>&nbsp;</td>
+                        <td>$130</td>
+                        <td>&nbsp;</td>
+                    </tr>
+
+                    <tr style="text-align: right;">
+                        <td colspan="4">Total:</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <p></p>
+
+            <h3 style="font-weight: bold">Credit Card Information</h3>
+            <table>
+                <tr>
+                    <td rowspan="2">
+                        <label>Card Type</label><br>
+                        <input type="radio" name="mastercard" id="mastercard"><label>Mastercard</label><br>
+                        <input type="radio" name="Visacard" id="Visacard"><label for="Visacard">Visa</label><br>
+                        <input type="radio" name="giftcard" id="giftcard"><label for="giftcard">Gift Card</label><br>
+                    </td>
+                    <td><label for="cardNumber" style="line-height: 5px;">Card Number:</label></td>     
+                    <td><input type="text" id="cardNumber" name="cardNumber" size="30"></td>
+                </tr>
+                <tr>
+                    <td><label for="date">Expired date:</label></td>
+                    <td><input type="date" id="date" name="date" size="30"></td>
+                </tr>
+                <tr>
+                    <td><label for="deliveryAddress" style="font-weight: bold;">Delivery Address:</label></td>
+                    <td colspan="2"><textarea rows="5" cols="25" name="address" id="deliveryAddress"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                    <input type="submit" value="sendOrder">
+                    <input type="button" value="clearForm">
+                    </td>
+                </tr>
+
+            </table>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>

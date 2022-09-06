@@ -1,0 +1,366 @@
+/* CSS style for assignment1 */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    background-color: rgb(237, 224, 211);
+}
+
+.headbar {
+    height: 100vh;
+    width: 100%;
+    background-color: #f7efef;
+    background-size: cover;
+    background-position: center;
+    padding: 0 20%;
+    padding-bottom: 2.5rem;
+}
+/* header style */
+#headpic {
+    height: 60px;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    position: relative;
+    z-index: 100;
+
+}
+
+.home {
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+span {
+    color: #260b91;
+}
+/* set the menu of toobar */
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+nav ul li a {
+    color: #260b91;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+nav ul li a:hover {
+    color: #f9004d;
+    transition: .4s;
+}
+
+h1 {
+    color:#260b91 ;
+    margin: 0px 0px 20px;
+    font-size: 100px;
+}
+
+h2{
+    font-size: 25px;
+    margin: 1px 0px 20px;
+    color:#260b91 ;
+}
+
+h3{
+    font-size: 20px;
+    margin: 4px 0px 20px;
+    color:#260b91 ;
+}
+
+
+p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-content: left;
+    padding: 10px;
+    line-height: 1.6;
+}
+
+.mainarea {
+    display: flex;
+
+}
+
+.rightpic {
+    float: left;
+    width: 400px; 
+    height: auto;
+}
+
+/* footer part */
+footer{
+  padding: 10px;
+  position: relative;
+  text-align: center;
+  /* bottom: 0; */
+  align-items: center;
+  flex-direction: column;
+display: flex;
+
+}
+
+footer p {
+    padding: 0;
+}
+/* set the interaction part */
+.social {
+  display: flex;
+
+}
+
+.social a {
+    width: 45px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f7efef;
+    border-radius: 50%;
+    margin: 22px 10px;
+    color: #260b91 ;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.social a:hover {
+    transform: scale(1.3);
+    transition: .3s;
+}
+/* set the resume style */
+.headerbar .resumemain{
+    margin: 0 auto;
+    width: 600px;
+    height: 200px;
+}
+.headerbar .resumemain h2{
+    align-content: center;
+    margin-left: 200px;
+}
+.headerbar .resumemain h3{
+    align-content: center;
+}
+.headerbar .resumemain h4{
+    align-content: center;
+    font-weight: bold;
+    color:#260b91 ;
+}
+
+.headerbar .resumemain .experience{
+    display: flex;
+}
+.headerbar .resumemain .experience p{
+    margin-left: 15px;
+}
+
+.headerbar .resumemain .experience .timeline{
+    float: left;
+}
+
+.headerbar .resumemain ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+div.experience, b{
+    background-color: white;
+}
+
+
+.resumemain ul {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: white;
+}
+
+.resumemain ul b{
+    list-style-type: square;
+    line-height: 1;
+}
+table{
+    width: 100%;
+    background-color: white;
+}
+
+#page-container{
+  /* position:relative; */
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#page-container #headerbar{
+  padding-bottom: 50px;    
+} 
+
+*{
+  box-sizing: border-box;
+}
+/* set the courses style */
+form.example {
+  max-width: 300px;
+  margin:auto;
+}
+
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+  }
+  
+  form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+  }
+  
+  form.example button:hover {
+    background: #0b7dda;
+  }
+  
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+/* set the layout style of courses images */
+  div.courseimg {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+    box-sizing: border-box;
+
+  }
+  
+  div.courseimg:hover {
+    border: 1px solid #777;
+  }
+  
+  div.courseimg img {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+    box-sizing: border-box;
+
+  }
+
+  #box{
+    width: 600px;
+    height: 400px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* background-color: #f1f1f1; */
+  }
+
+  #box>img{
+    width: 100%;
+    height: 100%;
+    /* float: left; */
+    object-fit: cover;
+    /* display: inline-block; */
+  }
+
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Style the search and sort buttons */
+.btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #ddd;
+  }
+  
+  .btn.active {
+    background-color: #666;
+    color: white;
+  }
+
+  .btnSort {
+  background-color: #2196F3;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 2px;
+  cursor: pointer;
+  border-radius: 10%;
+}
+/* set the dropdown list style */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.courses img {
+  width: 33%;
+  height: auto;
+  float: left; 
+  max-width: 235px;
+}

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CP-Web Assignment1 - my website~</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="dute_favicon_32x32.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Charis+SIL&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- head -->
+    <!-- <div class="headbar"> -->
+    <div id="headerbar" class="headerbar">
+        <nav>
+            <img class="logo"
+                src="https://brightspace.algonquincollege.com/d2l/lp/navbars/6606/theme/viewimage/400/view?v=20.22.6.51924"
+                alt="logo">
+            <h2 class="home"><img id="headpic" src="./images/headpic.png" alt="This is Header~"><span>Chunxia
+                    Pang</span></h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <!-- <li><a href="#about">About Me</a></li> -->
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <!-- <li><a href="#">Contact me</a></li> -->
+            </ul>
+        </nav>
+        <!-- set the search bar -->
+        <h2>My Courses</h2>
+        <form class="example">
+            <input type="text" placeholder="Search.." name="search2">
+            <button id="searchform" type="submit"><i class="fa fa-search"></i></button>
+        </form>
+        <!-- set the show button by level value -->
+        <div id="myBtnContainer">
+            <button class="btn active"> Show all</button>
+            <button class="btn"> Level-1</button>
+            <button class="btn"> Level-2</button>
+            <!-- set the sort button by dropdown list -->
+            <div class="dropdown">
+                <button class="btn btnSort">Sort</button>
+                <div class="dropdown-content">
+                    <a href="#">Level-1</a>
+                    <a href="#">Level-2</a>
+                </div>
+            </div>
+        </div>
+
+<!-- set the courses images -->
+        <div class="box">
+            <div class="courseimg">
+                <a target="_blank" href="#" class="filterDiv Math">
+                    <img src="images/Math.jpg" alt="courseimage" width="600" height="400">
+                    <!-- <span>2022W_Math</span> -->
+                </a>
+                <div class="desc">2022W_MAT8001C Math</div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="courseimg">
+                <a target="_blank" href="#" class="22W_CST8101 Computer Essentials">
+                    <img src="images/22W_CST8101_Computer_Essentials.jpg" alt="courseimage" width="600" height="400">
+                    <!-- <span>22W_CST8101 Computer Essentials</span> -->
+                </a>
+                <div class="desc">22W_CST8101 Computer Essentials</div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="courseimg">
+                <a target="_blank" href="#" class="22W_CST8116 Computer Programming">
+                    <img src="images/22W_CST8116_Computer_Programming.jpg" alt="courseimage" width="600" height="400">
+                </a>
+                <div class="desc">22W_CST8116 Computer Program</div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="courseimg">
+                <a target="_blank" href="#" class="22W_CST8215 Database">
+                    <img src="images/22W_CST8215_Database.jpg" alt="courseimage" width="600" height="400">
+                </a>
+                <div class="desc">22W_CST8215 Database</div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="courseimg">
+                <a target="_blank" href="#">
+                    <img src="images/22W_CST8300_Achieving_SUccess_in_Changing_Envir.jpg" alt="courseimage" width="600" height="400">
+                </a>
+                <div class="desc">22W_CST8300 Achieving SUccess</div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="courseimg">
+                <a target="_blank" href="#" class="22W_ENL1813T CommunicationsI">
+                    <img src="images/22W_ENL1813T_CommunicationsI.jpg" alt="courseimage" width="600" height="400">
+                </a>
+                <div class="desc">22W_ENL1813T CommunicationsI</div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="courseimg">
+                <a target="_blank" href="#" class="22S ENL2019T Communication II">
+                    <img src="images/22S_ENL2019T_Communication_II.jpg" alt="courseimage" width="600" height="400">
+                </a>
+                <div class="desc">22S ENL2019T Communication II</div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="courseimg">
+                <a target="_blank" href="#" class="22S_CST2355 Database Systems">
+                    <img src="images/22S_CST2355_Database_Systems.jpg" alt="courseimage" width="600" height="400">
+                </a>
+                <div class="desc">22S_CST2355 Database Systems</div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="courseimg">
+                <a target="_blank" href="#" class="22S_CST8102 Operating Systems Fund(GNU_Linux)">
+                    <img src="images/22S_CST8102_Operating_Systems_Fund(GNU_Linux).jpg" alt="courseimage" width="600" height="400">
+                </a>
+                <div class="desc">22S_CST8102 GNU_Linux</div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="courseimg">
+                <a target="_blank" href="#" class="22S_CST8284 Object Oriented Programming(Java)">
+                    <img src="images/22S_CST8284_Object_Oriented_Programming(Java).jpg" alt="courseimage" width="600" height="400">
+                </a>
+                <div class="desc">22S_CST8284 Object-Oriented</div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="courseimg">
+                <a target="_blank" href="#" class="22S_CST8285 Web Programming">
+                    <img src="images/22S_CST8285_Web_Programming.jpg" alt="courseimage" width="600" height="400">
+                </a>
+                <div class="desc">22S_CST8285 Web Program</div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="courseimg">
+                <a target="_blank" href="#" class="22S_GEP1001 Cooperative">
+                    <img src="images/22S_GEP1001_Cooperative.jpg" alt="courseimage" width="600" height="400">
+                </a>
+                <div class="desc">22S_GEP1001 Cooperative</div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+<!-- set the footer part -->
+    <footer>
+        <p>For more information, - please click on the link below to contact to me</p>
+        <div class="social">
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram-square"></i></a>
+            <a href="https://dribbble.com/"><i class="fa-brands fa-dribbble-square"></i></a>
+        </div>
+    </footer>
+    
+</body>
+
+</html>
